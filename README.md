@@ -1,1 +1,1 @@
-https://edwardchong24.github.io/design/main.html
+https://edwardchong24.github.io/design
