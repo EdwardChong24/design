@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latest Responsive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="include/style.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="main.html">CUBE</a></li>
+                <li><a href="test.html">TEST</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <img src="images/menu-icon.png" class="menu-icon" onclick="showMenu()" alt="Menu Icon">
+    </div>
+
+    <div class="hero">
+        <h1>RESPONSIVE DESIGN,<br>MAKE WEBSITE BY YOURSELF.</h1>
+        <div class="btn">
+            <span></span><span></span><span></span><span></span>
+            <p>Hover Me</p>
+        </div>
+    </div>
+
+    <div class="bubbles">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+        <img src="images/bubble.png" alt="Bubble">
+    </div>
+
+    <script>
+        function showMenu(){
+            var toggle = document.getElementById("mobileMenu");
+            if(toggle.style.height == "0px"){
+                toggle.style.height = "200px";
+            }
+            else{
+                toggle.style.height = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

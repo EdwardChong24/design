@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latest Responsive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="include/style.css">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="main.html">CUBE</a></li>
+                <li><a href="test.html">TEST</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <img src="images/menu-icon.png" class="menu-icon" onclick="showMenu()" alt="Menu Icon">
+    </div>
+
+    <!-- Content for the Blog Page -->
+    <div class="blog-content">
+        <h1>Latest Blog Posts</h1>
+        <div class="post">
+            <h2>Post Title 1</h2>
+            <p>Content of the first post.</p>
+        </div>
+        <div class="post">
+            <h2>Post Title 2</h2>
+            <p>Content of the second post.</p>
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+
+    <script>
+        function showMenu(){
+            var toggle = document.getElementById("mobileMenu");
+            if(toggle.style.height == "0px"){
+                toggle.style.height = "200px";
+            }
+            else{
+                toggle.style.height = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
